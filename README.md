@@ -4,6 +4,7 @@ Nofile Enquiry - JMS Content - Java L3 Externsibility Framework
 
 
      ENQUIRY........... BNPE.ENQ.JMS.BROWSER
+     
    1 PAGE.SIZE ........ 4,99
    2 FILE.NA NOFILE.BNPE.ENQ.JMS.BROWSER
    3. 1 FIXE ENQ.ROUTINE
