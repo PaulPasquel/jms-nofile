@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bndp.latam.t24.nofiles</groupId>
+  <artifactId>jms-nofile</artifactId>
+  <version>1.0.0</version>
+  <name>Nofile to consume JMS</name>
+  
+  <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    <jboss.home>C:/Temenos/BNDP/jboss-eap-7.2</jboss.home>
+    <t24.lib>C:/Temenos/BNDP/bnk/jars/t24lib</t24.lib>
+    <tafj.lib>C:/Temenos/BNDP/TAFJ\lib</tafj.lib>    
+  </properties>
+  
+  <dependencies>
+    <dependency>
+        <groupId>com.temenos.tafj</groupId>
+        <artifactId>TAFJ-Client</artifactId>
+        <scope>system</scope>
+        <systemPath>${tafj.lib}/TAFJClient.jar</systemPath>
+        <version>1.0.0</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>com.temenos.t24</groupId>
+        <artifactId>EB-EnquiryHook</artifactId>
+        <scope>system</scope>
+        <systemPath>${t24.lib}/EB_EnquiryHook.jar</systemPath>
+        <version>1.0.0</version>
+    </dependency>
+    
+        <dependency>
+            <groupId>org.jboss.bom</groupId>
+            <artifactId>eap-runtime-artifacts</artifactId>
+            <scope>system</scope>
+            <systemPath>${jboss.home}\bin\client\jboss-client.jar</systemPath>
+            <version>7.5</version>
+        </dependency>
+    
+    
+  </dependencies>
+  
+</project>
